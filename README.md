@@ -2,7 +2,7 @@
 
 > Machine Learning based Automated Trading with Robinhood app
 
-The basic idea is to read historical data and compute indicators as our features for classification. The BUY and SELL signals are created based on the future peak of historical data. If the cumulative return of a stock after 3 days into the future is high enough, it is a BUY signal. If it is low, it is considered to be a SELL signal. If it is pretty much the same, we DO NOTHING. Basic sci-kit learn ML models are used. 
+The basic idea is to read historical data and compute indicators as our features for classification. The BUY and SELL signals are created based on the future peak of historical data. If the cumulative return of a stock after 3 days into the future is high enough, it is a BUY signal. If it is low, it is considered to be a SELL signal. If it is pretty much the same, we DO NOTHING. Basic sci-kit learn ML models are used. Note that everything in this repo is for educational purposes.
 
 ## Installation
 
@@ -44,7 +44,7 @@ After simulating your trading strategy, run the following Python script:
 ```
 python3 automated_trading.py
 ```
-Make sure you login to Robinhood correctly. You can use crontab to execute the script daily. 
+Make sure you login to Robinhood correctly. You can use crontab to execute the script daily. You should uncomment the market buy and sell orders in the script to make sure orders get through. Those lines are commented for your sake.
 
 One important thing with this is the .txt files. You need to manually create txt files for each stock you own or want to own. Just enter the number of shares you currently have or 0. Examples are provided in the repo. This helps with automating, as the files get updated each time you buy or sell any shares. This would make sure Robinhood will not try to sell any shares you do not have. 
 
