@@ -37,7 +37,7 @@ To make sure your classifier works, run the following:
 ```
 python3 simulate_results.py
 ```
-You can change the number of shares to buy/sell, ML algorithm, and starting value of your portfolio. 
+You can change the number of shares to buy/sell, ML algorithm, and starting value of your portfolio. This script simulates the market from previos years with your trading decisions and shows the performance of your portfolio. 
 
 ## Automated Trading
 After simulating your trading strategy, run the following Python script: 
@@ -47,3 +47,7 @@ python3 automated_trading.py
 Make sure you login to Robinhood correctly. You can use crontab to execute the script daily. 
 
 One important thing with this is the .txt files. You need to manually create txt files for each stock you own or want to own. Just enter the number of shares you currently have or 0. Examples are provided in the repo. This helps with automating, as the files get updated each time you buy or sell any shares. This would make sure Robinhood will not try to sell any shares you do not have. 
+
+## Example Simulation
+The performance of our classifier with TQQQ stock is shown below. Note that the portfolio values are normalized.
+![](TQQQ.png)
