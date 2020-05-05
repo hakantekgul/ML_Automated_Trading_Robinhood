@@ -2,7 +2,9 @@
 
 > Machine Learning based Automated Trading with Robinhood app
 
-The basic idea is to read historical data and compute indicators as our features for classification. The BUY and SELL signals are created based on the future peak of historical data. If the cumulative return of a stock after 3 days into the future is high enough, it is a BUY signal. If it is low, it is considered to be a SELL signal. If it is pretty much the same, we DO NOTHING. Basic sci-kit learn ML models are used. Note that everything in this repo is for educational purposes.
+The basic idea is to read historical data and compute indicators as our features for classification. The BUY and SELL signals are created based on the future peak of historical data. If the cumulative return of a stock after 3 days into the future is high enough, it is a BUY signal. If it is low, it is considered to be a SELL signal. If it is pretty much the same, we DO NOTHING. Basic sci-kit learn ML models are used. 
+
+Note that everything in this repo is for educational purposes. Do not risk money which you are afraid to lose. USE THE SOFTWARE AT YOUR OWN RISK. THE AUTHORS AND ALL AFFILIATES ASSUME NO RESPONSIBILITY FOR YOUR TRADING RESULTS.
 
 ## Installation
 
